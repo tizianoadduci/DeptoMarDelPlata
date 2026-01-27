@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Depto Mar del Plata - 3 Cuadras de Playa Las Toscas | Alquiler Temporario</title>
+    <meta name="description" content="Alquiler temporario en Mar del Plata a 3 cuadras de Playa Las Toscas. Depto moderno con cama rebatible, cocina equipada, WiFi rápido. Superanfitrión con excelentes reseñas.">
+    <meta name="keywords" content="alquiler Mar del Plata, depto Las Toscas, alquiler temporario, Torreón, departamento playa, Mar del Plata alojamiento, airbnb Mar del Plata">
+    <meta name="author" content="Tiziano Adduci">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Depto Moderno Mar del Plata - 3 Cuadras de la Playa">
+    <meta property="og:description" content="Alquiler temporario en Mar del Plata. Ubicación privilegiada cerca de Las Toscas y el Torreón. Superanfitrión.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tudominio.com">
+    <meta property="og:image" content="Foto1.jpeg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏖️</text></svg>">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --arena-claro: #f5f1e8;
+            --arena: #e8dcc4;
+            --arena-oscuro: #d4c5a0;
+            --tierra: #a89078;
+            --texto-oscuro: #3d3935;
+            --blanco: #ffffff;
+            --sombra: rgba(61, 57, 53, 0.15);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: var(--texto-oscuro);
+            background-color: var(--arena-claro);
+        }
+        
+        /* Header y Hero */
+        header {
+            background: linear-gradient(135deg, var(--arena-oscuro) 0%, var(--tierra) 100%);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px var(--sombra);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--blanco);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        .hero {
+            position: relative;
+            height: 70vh;
+            min-height: 500px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.7);
+        }
+        
+        .hero-content {
+            position: relative;
+            text-align: center;
+            color: var(--blanco);
+            z-index: 10;
+            padding: 2rem;
+            max-width: 800px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background-color: var(--tierra);
+            color: var(--blanco);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        
+        .cta-button:hover {
+            background-color: var(--arena-oscuro);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+        }
+        
+        /* Secciones */
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--texto-oscuro);
+        }
+        
+        /* Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .feature-card {
+            background: var(--blanco);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px var(--sombra);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--tierra);
+        }
+        
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px var(--sombra);
+            cursor: pointer;
+            aspect-ratio: 4/3;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* Videos Section */
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .video-card {
+            background: var(--blanco);
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px var(--sombra);
+        }
+        
+        .video-card h3 {
+            margin-bottom: 1rem;
+            color: var(--tierra);
+        }
+        
+        .video-card video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px var(--sombra);
+        }
+        
+        /* Info Cards */
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .info-card {
+            background: var(--blanco);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px var(--sombra);
+        }
+        
+        .info-card h3 {
+            color: var(--tierra);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .info-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .info-card li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--arena);
+        }
+        
+        .info-card li:last-child {
+            border-bottom: none;
+        }
+        
+        .info-card li:before {
+            content: "✓ ";
+            color: var(--tierra);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        /* Location */
+        .location-content {
+            background: var(--blanco);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px var(--sombra);
+            margin-bottom: 2rem;
+        }
+        
+        .location-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .location-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--arena-claro);
+            border-radius: 10px;
+        }
+        
+        .location-item span {
+            font-size: 2rem;
+        }
+        
+        /* Contact */
+        .contact-info {
+            background: var(--blanco);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px var(--sombra);
+            text-align: center;
+        }
+        
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-method {
+            padding: 1.5rem;
+            background: var(--arena-claro);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        
+        .contact-method:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact-method a {
+            color: var(--texto-oscuro);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .contact-method .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Superhost Badge */
+        .superhost-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF385C 0%, #E61E4D 100%);
+            color: var(--blanco);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(230, 30, 77, 0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--tierra);
+            color: var(--blanco);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        
+        /* Modal para galería */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+        
+        .modal-content {
+            position: relative;
+            margin: auto;
+            padding: 0;
+            max-width: 90%;
+            max-height: 90%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .modal-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: var(--blanco);
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .modal-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 40px;
+            color: var(--blanco);
+            cursor: pointer;
+            padding: 1rem;
+            user-select: none;
+        }
+        
+        .modal-prev { left: 20px; }
+        .modal-next { right: 20px; }
+        
+        /* Mobile Menu */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--blanco);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--tierra);
+                flex-direction: column;
+                padding: 1rem;
+                display: none;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+            
+            .videos-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 70px;
+            height: 70px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 40px;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            animation: pulse 4s infinite;
+            text-decoration: none;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.15);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.7);
+            background-color: #1fb855;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.08);
+            }
+        }
+        
+        .whatsapp-float::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #25d366;
+            opacity: 0.5;
+            animation: ripple 2s infinite;
+        }
+        
+        @keyframes ripple {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+        
+        /* Scroll animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 1.2s ease-out both;
+        }
+        
+        .fade-in-left {
+            animation: fadeInLeft 1.2s ease-out both;
+        }
+        
+        .fade-in-right {
+            animation: fadeInRight 1.2s ease-out both;
+        }
+        
+        .fade-in {
+            animation: fadeIn 1.5s ease-out both;
+        }
+        
+        .scale-in {
+            animation: scaleIn 1s ease-out both;
+        }
+        
+        /* Delays para animaciones escalonadas */
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+        .delay-6 { animation-delay: 0.6s; }
+        
+        /* Animación del hero */
+        .hero-content > * {
+            opacity: 0;
+        }
+        
+        .hero-content h1 {
+            animation: fadeInUp 1.5s ease-out 0.3s both;
+        }
+        
+        .hero-content p {
+            animation: fadeInUp 1.5s ease-out 0.6s both;
+        }
+        
+        .hero-content .superhost-badge {
+            animation: scaleIn 1.2s ease-out 0.9s both;
+        }
+        
+        .hero-content .cta-button {
+            animation: fadeInUp 1.5s ease-out 1.2s both;
+        }
+        
+        /* Animación del hero image con zoom suave */
+        .hero-image {
+            animation: slowZoom 20s ease-in-out infinite alternate;
+        }
+        
+        @keyframes slowZoom {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+        
+        /* Header aparece suavemente */
+        header {
+            animation: fadeIn 1s ease-out;
+        }
+        
+        /* Elementos sin animar inicialmente */
+        .feature-card,
+        .info-card,
+        .gallery-item,
+        .video-card,
+        .location-item,
+        .contact-method {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">🏖️ Depto Mar del Plata</a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <img src="/Assets/Foto1.jpeg" alt="Departamento moderno en Mar del Plata" class="hero-image">
+        <div class="hero-content">
+            <h1>Tu Refugio en Mar del Plata</h1>
+            <p>A solo 3 cuadras de Playa Las Toscas y cerca del Torreón</p>
+            <div class="superhost-badge">⭐ Superanfitrión</div>
+            <a href="#contacto" class="cta-button">Reservar Ahora</a>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section id="caracteristicas">
+        <h2 class="section-title">¿Por Qué Elegir Este Depto?</h2>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🏖️</div>
+                <h3>Ubicación Privilegiada</h3>
+                <p>A solo 3 cuadras de Playa Las Toscas y cerca del emblemático Torreón</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🛏️</div>
+                <h3>Cama Rebatible</h3>
+                <p>Espacio inteligente con cama rebatible para maximizar el confort</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📶</div>
+                <h3>WiFi Rápido</h3>
+                <p>Internet de alta velocidad para trabajo o entretenimiento</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🍳</div>
+                <h3>Cocina Equipada</h3>
+                <p>Todo lo necesario: microondas, pava, tostadora eléctrica y más</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📺</div>
+                <h3>Entretenimiento</h3>
+                <p>TV para tus momentos de relax</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Hasta 3 Personas</h3>
+                <p>Perfecto para parejas o pequeños grupos</p>
+            </div>
+        </div>
+        
+        <div class="info-cards">
+            <div class="info-card">
+                <h3>✨ Amenidades</h3>
+                <ul>
+                    <li>WiFi de alta velocidad</li>
+                    <li>Cocina totalmente equipada</li>
+                    <li>Microondas</li>
+                    <li>Pava eléctrica</li>
+                    <li>Tostadora</li>
+                    <li>TV</li>
+                    <li>Ropa de cama</li>
+                    <li>Toallas</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <h3>🏠 Espacios</h3>
+                <ul>
+                    <li>Living-comedor amplio</li>
+                    <li>Dormitorio con cama rebatible</li>
+                    <li>Cocina integrada</li>
+                    <li>Baño completo</li>
+                    <li>Gran ventanal</li>
+                    <li>Excelente iluminación</li>
+                    <li>Espacio optimizado</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <h3>📋 Detalles</h3>
+                <ul>
+                    <li>Check-in: 14:00 hs</li>
+                    <li>Check-out: 10:30 hs</li>
+                    <li>Capacidad: 3 personas</li>
+                    <li>Edificio: Marina IV</li>
+                    <li>Zona tranquila</li>
+                    <li>Excelentes reseñas</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria">
+        <h2 class="section-title">Conocé Cada Rincón</h2>
+        <div class="gallery">
+            <div class="gallery-item" onclick="openModal(0)">
+                <img src="Assets/Foto1.jpeg" alt="Living comedor con vista amplia" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openModal(1)">
+                <img src="Assets/Foto2.jpeg" alt="Dormitorio con cama rebatible" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openModal(2)">
+                <img src="Assets/Foto3.jpeg" alt="Cocina equipada" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openModal(3)">
+                <img src="Assets/Foto4.jpeg" alt="Sala de estar" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openModal(4)">
+                <img src="Assets/Foto5.jpeg" alt="Cama rebatible desplegada" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openModal(5)">
+                <img src="Assets/Foto6.jpeg" alt="Pasillo y baño" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openModal(6)">
+                <img src="Assets/Foto7.jpeg" alt="Baño completo" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openModal(7)">
+                <img src="Assets/Foto8.jpeg" alt="Detalle de baño" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openModal(8)">
+                <img src="Assets/Foto9.jpeg" alt="Vista desde el balcón" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openModal(9)">
+                <img src="Assets/Foto10.jpeg" alt="Vista exterior" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openModal(10)">
+                <img src="Assets/Foto11.jpeg" alt="Entrada edificio Marina IV" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openModal(11)">
+                <img src="Assets/Foto12.jpeg" alt="Hall del edificio" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos -->
+    <section id="videos">
+        <h2 class="section-title">Video Tours del Depto</h2>
+        <p style="text-align: center; margin-bottom: 2rem; color: var(--tierra);">
+            Mirá cómo funcionan las características especiales del departamento
+        </p>
+        <div class="videos-grid">
+            <div class="video-card">
+                <h3>🎥 Video Tutorial 1</h3>
+                <p style="margin-bottom: 1rem;">Uso Persiana</p>
+                <video controls preload="metadata">
+                    <source src="Assets/Video1.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+            <div class="video-card">
+                <h3>🎥 Video Tutorial 2</h3>
+                <p style="margin-bottom: 1rem;">Uso de cama revatible</p>
+                <video controls preload="metadata">
+                    <source src="Assets/Video2.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section id="ubicacion">
+        <h2 class="section-title">Ubicación Inmejorable</h2>
+        <div class="location-content">
+            <h3 style="color: var(--tierra); margin-bottom: 1rem;">Mar del Plata - Zona Torreón</h3>
+            <p style="margin-bottom: 2rem;">
+                Nuestro departamento está estratégicamente ubicado a solo 3 cuadras de la hermosa Playa Las Toscas, 
+                en una zona tranquila pero céntrica, cerca del icónico Torreón de Mar del Plata.
+            </p>
+            
+            <div class="location-highlights">
+                <div class="location-item">
+                    <span>🏖️</span>
+                    <div>
+                        <strong>Playa Las Toscas</strong><br>
+                        3 cuadras (5 min caminando)
+                    </div>
+                </div>
+                <div class="location-item">
+                    <span>🗼</span>
+                    <div>
+                        <strong>Torreón del Monje</strong><br>
+                        Cerca del ícono de la ciudad
+                    </div>
+                </div>
+                <div class="location-item">
+                    <span>🛒</span>
+                    <div>
+                        <strong>Comercios</strong><br>
+                        Supermercados y restaurantes cerca
+                    </div>
+                </div>
+                <div class="location-item">
+                    <span>🚗</span>
+                    <div>
+                        <strong>Transporte</strong><br>
+                        Excelente conectividad
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2 class="section-title">Reservá Tu Estadía</h2>
+        <div class="contact-info">
+            <div class="superhost-badge">⭐ Superanfitrión con Excelentes Reseñas</div>
+            <p style="margin: 2rem 0; font-size: 1.1rem;">
+                Contactame para disponibilidad y reservas. ¡Respondo rápido!
+            </p>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:adduci.tiziano@gmail.com">adduci.tiziano@gmail.com</a>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="icon">📱</div>
+                    <h3>WhatsApp</h3>
+                    <a href="https://wa.me/541133475296" target="_blank">+54 11 3347-5296</a>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="icon">🏠</div>
+                    <h3>Airbnb</h3>
+                    <a href="https://airbnb.com.ar/h/mardelplatadeptoalquiler" target="_blank">Ver en Airbnb</a>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem; padding: 2rem; background: var(--arena-claro); border-radius: 10px;">
+                <h3 style="color: var(--tierra); margin-bottom: 1rem;">Horarios de Check-in/out</h3>
+                <p><strong>Check-in:</strong> A partir de las 14:00 hs</p>
+                <p><strong>Check-out:</strong> Hasta las 10:30 hs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/541133475296?text=Hola!%20Me%20interesa%20el%20departamento%20en%20Mar%20del%20Plata"
+   class="whatsapp-float"
+   target="_blank"
+   title="Contactar por WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Departamento Mar del Plata - Tiziano Adduci</p>
+        <p>Mar del Plata, Buenos Aires, Argentina</p>
+        <p style="margin-top: 1rem;">
+            <a href="mailto:adduci.tiziano@gmail.com" style="color: var(--blanco); text-decoration: none;">✉️ adduci.tiziano@gmail.com</a> | 
+            <a href="https://wa.me/541133475296" style="color: var(--blanco); text-decoration: none;">📱 WhatsApp</a>
+        </p>
+        <p style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2); font-size: 0.9rem; opacity: 0.9;">
+            Desarrollo Web <a href="https://www.linkedin.com/in/tiziano-vidal-adduci-445776273" target="_blank" style="color: var(--blanco); text-decoration: none; font-weight: bold; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">Tiziano Thomas Vidal Adduci</a> 💻
+        </p>
+    </footer>
+
+    <!-- Modal para galería -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="modal-nav modal-prev" onclick="changeImage(-1)">❮</span>
+        <span class="modal-nav modal-next" onclick="changeImage(1)">❯</span>
+        <div class="modal-content">
+            <img id="modalImage" alt="Imagen ampliada">
+        </div>
+    </div>
+
+    <script>
+        // Navegación móvil
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Cerrar menú móvil si está abierto
+                    const navLinks = document.getElementById('navLinks');
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+        
+        // Galería modal
+        const images = [
+            'Foto1.jpeg', 'Foto2.jpeg', 'Foto3.jpeg', 'Foto4.jpeg',
+            'Foto5.jpeg', 'Foto6.jpeg', 'Foto7.jpeg', 'Foto8.jpeg',
+            'Foto9.jpeg', 'Foto10.jpeg', 'Foto11.jpeg', 'Foto12.jpeg'
+        ];
+        
+        let currentImageIndex = 0;
+        
+        function openModal(index) {
+            currentImageIndex = index;
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImage.src = images[currentImageIndex];
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        function changeImage(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            } else if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            }
+            document.getElementById('modalImage').src = images[currentImageIndex];
+        }
+        
+        // Cerrar modal con ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            } else if (event.key === 'ArrowLeft') {
+                changeImage(-1);
+            } else if (event.key === 'ArrowRight') {
+                changeImage(1);
+            }
+        });
+        
+        // Cerrar modal al hacer clic fuera de la imagen
+        document.getElementById('imageModal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closeModal();
+            }
+        });
+        
+        // Animaciones de scroll mejoradas
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Agregar animación según el tipo de elemento
+                    if (entry.target.classList.contains('feature-card')) {
+                        entry.target.classList.add('scale-in');
+                    } else if (entry.target.classList.contains('gallery-item')) {
+                        entry.target.classList.add('fade-in-up');
+                    } else if (entry.target.classList.contains('video-card')) {
+                        entry.target.classList.add('fade-in-up');
+                    } else if (entry.target.classList.contains('info-card')) {
+                        entry.target.classList.add('fade-in-up');
+                    } else if (entry.target.classList.contains('location-item')) {
+                        entry.target.classList.add('fade-in-left');
+                    } else if (entry.target.classList.contains('contact-method')) {
+                        entry.target.classList.add('scale-in');
+                    }
+                    
+                    // Dejar de observar una vez animado
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Observar todos los elementos animables
+        document.querySelectorAll('.feature-card, .info-card, .gallery-item, .video-card, .location-item, .contact-method').forEach((el, index) => {
+            // Agregar delays escalonados
+            const delayClass = `delay-${(index % 6) + 1}`;
+            el.classList.add(delayClass);
+            observer.observe(el);
+        });
+        
+        // Animación especial para títulos de sección
+        const titleObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '0';
+                    entry.target.style.transform = 'translateY(30px)';
+                    setTimeout(() => {
+                        entry.target.style.transition = 'all 1s ease-out';
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, 100);
+                    titleObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        document.querySelectorAll('.section-title').forEach(title => {
+            titleObserver.observe(title);
+        });
+
+        // Actualizar año en el footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+    </script>
+</body>
+</html>
