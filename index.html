@@ -220,6 +220,35 @@
         .gallery-item:hover img {
             transform: scale(1.1);
         }
+
+        /* Modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+/* Botón cerrar */
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
         
         /* Videos Section */
         .videos-grid {
@@ -389,21 +418,18 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0,0,0,0.9);
+            align-items: center;
+            justify-content: center;
         }
         
-        .modal-content {
-            position: relative;
-            margin: auto;
-            padding: 0;
+        .modal.active {
+            display: flex;
+        }
+        
+        #modalImage {
             max-width: 90%;
-            max-height: 90%;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        
-        .modal-content img {
-            width: 100%;
-            height: auto;
+            max-height: 90vh;
+            object-fit: contain;
             border-radius: 10px;
         }
         
@@ -831,6 +857,14 @@
         </div>
     </section>
 
+    <!-- Modal -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img id="modalImage" alt="">
+    <span class="modal-nav modal-prev" onclick="event.stopPropagation(); changeImage(-1)">&#10094;</span>
+    <span class="modal-nav modal-next" onclick="event.stopPropagation(); changeImage(1)">&#10095;</span>
+</div>
+
     <!-- Videos -->
     <section id="videos">
         <h2 class="section-title">Video Tours del Depto</h2>
@@ -977,6 +1011,34 @@
     </div>
 
     <script>
+
+        const imagess = [
+    "Assets/Foto1.jpeg",
+    "Assets/Foto2.jpeg",
+    "Assets/Foto3.jpeg",
+    "Assets/Foto4.jpeg",
+    "Assets/Foto5.jpeg",
+    "Assets/Foto6.jpeg",
+    "Assets/Foto7.jpeg",
+    "Assets/Foto8.jpeg",
+    "Assets/Foto9.jpeg",
+    "Assets/Foto10.jpeg",
+    "Assets/Foto11.jpeg",
+    "Assets/Foto12.jpeg"
+];
+
+function openModal(index) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+
+    modalImg.src = imagess[index];
+    modal.style.display = "flex";
+};
+
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+};
+
         // Navegación móvil
         function toggleMenu() {
             const navLinks = document.getElementById('navLinks');
@@ -1013,14 +1075,14 @@
             currentImageIndex = index;
             const modal = document.getElementById('imageModal');
             const modalImage = document.getElementById('modalImage');
-            modal.style.display = 'block';
-            modalImage.src = images[currentImageIndex];
+            modal.classList.add('active');
+            modalImage.src = 'Assets/' + images[currentImageIndex];
             document.body.style.overflow = 'hidden';
         }
         
         function closeModal() {
             const modal = document.getElementById('imageModal');
-            modal.style.display = 'none';
+            modal.classList.remove('active');
             document.body.style.overflow = 'auto';
         }
         
@@ -1031,7 +1093,7 @@
             } else if (currentImageIndex >= images.length) {
                 currentImageIndex = 0;
             }
-            document.getElementById('modalImage').src = images[currentImageIndex];
+            document.getElementById('modalImage').src = 'Assets/' + images[currentImageIndex];
         }
         
         // Cerrar modal con ESC
