@@ -15,13 +15,52 @@
     <meta property="og:title" content="Depto Moderno Mar del Plata - 3 Cuadras de la Playa">
     <meta property="og:description" content="Alquiler temporario en Mar del Plata. Ubicación privilegiada cerca de Las Toscas y el Torreón. Superanfitrión.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tudominio.com">
-    <meta property="og:image" content="Foto1.jpeg">
-    
+    <meta property="og:url" content="https://tizianoadduci.github.io/DeptoMarDelPlata/">
+    <meta property="og:image" content="https://tizianoadduci.github.io/DeptoMarDelPlata/Assets/Foto1.jpeg">
+    <meta property="og:image:alt" content="Departamento moderno en Mar del Plata">
+    <meta property="og:site_name" content="Depto Mar del Plata">
+    <meta property="og:locale" content="es_AR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Depto Moderno Mar del Plata - 3 Cuadras de la Playa">
+    <meta name="twitter:description" content="Alquiler temporario en Mar del Plata. Ubicación privilegiada cerca de Las Toscas y el Torreón. Superanfitrión.">
+    <meta name="twitter:image" content="https://tizianoadduci.github.io/DeptoMarDelPlata/Assets/Foto1.jpeg">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏖️</text></svg>">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Datos estructurados (SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Apartment",
+      "name": "Depto Mar del Plata - 3 Cuadras de Playa Las Toscas",
+      "description": "Alquiler temporario en Mar del Plata a 3 cuadras de Playa Las Toscas, cerca del Torreón. Depto moderno con cama rebatible, cocina equipada y WiFi rápido.",
+      "url": "https://tizianoadduci.github.io/DeptoMarDelPlata/",
+      "image": "https://tizianoadduci.github.io/DeptoMarDelPlata/Assets/Foto1.jpeg",
+      "numberOfRooms": 1,
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "maxValue": 3,
+        "unitText": "personas"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Falucho 1739",
+        "addressLocality": "Mar del Plata",
+        "addressRegion": "Buenos Aires",
+        "postalCode": "7600",
+        "addressCountry": "AR"
+      },
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "WiFi", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Cocina equipada", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "TV", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Cama rebatible", "value": true }
+      ]
+    }
+    </script>
 
     <style>
         * {
@@ -221,35 +260,6 @@
             transform: scale(1.1);
         }
 
-        /* Modal */
-.modal {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.9);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-}
-
-.modal img {
-    max-width: 90vw;
-    max-height: 90vh;
-    object-fit: contain;
-    border-radius: 12px;
-}
-
-/* Botón cerrar */
-.modal .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    color: #fff;
-    cursor: pointer;
-    user-select: none;
-}
-        
         /* Videos Section */
         .videos-grid {
             display: grid;
@@ -346,7 +356,29 @@
         .location-item span {
             font-size: 2rem;
         }
-        
+
+        .location-address {
+            margin-top: 2rem;
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: var(--tierra);
+        }
+
+        .map-container {
+            margin-top: 1.5rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px var(--sombra);
+            line-height: 0;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            display: block;
+        }
+
         /* Contact */
         .contact-info {
             background: var(--blanco);
@@ -779,7 +811,7 @@
                     <li>WiFi de alta velocidad</li>
                     <li>Cocina totalmente equipada</li>
                     <li>Microondas</li>
-                    <li>Pava Silvadora</li>
+                    <li>Pava Silbadora</li>
                     <li>Tostadora</li>
                     <li>TV</li>
                     <li>Ropa de cama</li>
@@ -857,14 +889,6 @@
         </div>
     </section>
 
-    <!-- Modal -->
-<div id="imageModal" class="modal" onclick="closeModal()">
-    <span class="close">&times;</span>
-    <img id="modalImage" alt="">
-    <span class="modal-nav modal-prev" onclick="event.stopPropagation(); changeImage(-1)">&#10094;</span>
-    <span class="modal-nav modal-next" onclick="event.stopPropagation(); changeImage(1)">&#10095;</span>
-</div>
-
     <!-- Videos -->
     <section id="videos">
         <h2 class="section-title">Video Tours del Depto</h2>
@@ -882,7 +906,7 @@
             </div>
             <div class="video-card">
                 <h3>🎥 Video Tutorial 2</h3>
-                <p style="margin-bottom: 1rem;">Uso de cama revatible</p>
+                <p style="margin-bottom: 1rem;">Uso de cama rebatible</p>
                 <video controls preload="metadata">
                     <source src="Assets/Video2.mp4" type="video/mp4">
                     Tu navegador no soporta la reproducción de videos.
@@ -898,7 +922,7 @@
             </div>
             <div class="video-card">
                 <h3>🎥 Video Tutorial 4</h3>
-                <p style="margin-bottom: 1rem;">Video 4</p>
+                <p style="margin-bottom: 1rem;">Uso del calefactor</p>
                 <video controls preload="metadata">
                     <source src="Assets/Video4.mp4" type="video/mp4">
                     Tu navegador no soporta la reproducción de videos.
@@ -947,6 +971,17 @@
                     </div>
                 </div>
             </div>
+
+            <p class="location-address">📍 Falucho 1739, Mar del Plata</p>
+            <div class="map-container">
+                <iframe
+                    src="https://maps.google.com/maps?q=Falucho%201739%2C%20Mar%20del%20Plata&z=15&output=embed"
+                    title="Mapa de ubicación - Falucho 1739, Mar del Plata"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </section>
 
@@ -991,8 +1026,12 @@
     <a href="https://wa.me/541133475296?text=Hola!%20Me%20interesa%20el%20departamento%20en%20Mar%20del%20Plata"
    class="whatsapp-float"
    target="_blank"
+   rel="noopener"
+   aria-label="Contactar por WhatsApp"
    title="Contactar por WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="38" height="38" fill="currentColor" aria-hidden="true">
+    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 222.1-99.6 222.1-222 0-59.3-25.2-115-67.1-157zM223.9 438.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.4-5-3.8-10.5-6.6z"/>
+  </svg>
 </a>
 
     <!-- Footer -->
@@ -1019,33 +1058,6 @@
     </div>
 
     <script>
-
-        const imagess = [
-    "Assets/Foto1.jpeg",
-    "Assets/Foto2.jpeg",
-    "Assets/Foto3.jpeg",
-    "Assets/Foto4.jpeg",
-    "Assets/Foto5.jpeg",
-    "Assets/Foto6.jpeg",
-    "Assets/Foto7.jpeg",
-    "Assets/Foto8.jpeg",
-    "Assets/Foto9.jpeg",
-    "Assets/Foto10.jpeg",
-    "Assets/Foto11.jpeg",
-    "Assets/Foto12.jpeg"
-];
-
-function openModal(index) {
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("modalImage");
-
-    modalImg.src = imagess[index];
-    modal.style.display = "flex";
-};
-
-function closeModal() {
-    document.getElementById("imageModal").style.display = "none";
-};
 
         // Navegación móvil
         function toggleMenu() {
@@ -1121,7 +1133,20 @@ function closeModal() {
                 closeModal();
             }
         });
-        
+
+        // Accesibilidad de la galería: navegable con teclado
+        document.querySelectorAll('.gallery-item').forEach((item, index) => {
+            item.setAttribute('role', 'button');
+            item.setAttribute('tabindex', '0');
+            item.setAttribute('aria-label', 'Ampliar imagen ' + (index + 1));
+            item.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    openModal(index);
+                }
+            });
+        });
+
         // Animaciones de scroll mejoradas
         const observerOptions = {
             threshold: 0.15,
